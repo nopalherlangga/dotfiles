@@ -18,23 +18,30 @@
 		"custom/arrow5",
 		"memory",
 		"custom/arrow4",
-		"network",
+		"custom/updates",
 		"tray",
+		"network",
 		"custom/arrow3",
 		"clock#date",
 		"clock#time"
 	],
 
 	"hyprland/window": {
-		"format": "{}",
-        "max-length": 50,
+		"format": "{title}",
         "rewrite": {
             "npzy@arch:(.*)": "  $ $1",
             "(.*) - Code - OSS": "󰨞 $1",
             "(.*)Code - OSS": "󰨞 Code",
             "(.*) - Discord": " $1",
             "(.*)Google chrome": " Chrome",
-			"(.*)Telegram": " Telegram"
+			"(.*)Telegram": " Telegram",
+			"(.*) - YouTube - Brave": " $1",
+			"(.*)YouTube - Brave": " $1",
+			"(.*)Facebook - Brave": " $1",
+			"(.*)Instagram - Brave": " $1",
+			"(.*) \\| Cloudflare - Brave": " $1",
+			"(.*) - Gmail - Brave": "󰊫 $1",
+			"^(.*)- Brave$": " $1"
         },
 		"separate-outputs": true
     },
@@ -71,6 +78,15 @@
 		},
 		"tooltip": true,
 		"tooltip-format": "Usage {percentage}%\n  {used}GB/{total}GB"
+	},
+
+	"custom/updates": {
+		"escape": true,
+		"exec": "~/.config/waybar/scripts/check-updates.sh",
+		"format": "{}",
+		"interval": 1800,
+		"on-click": "alacritty --class floating -e ~/.config/waybar/scripts/install-updates.sh",
+		"return-type": "json"
 	},
 
 	"network": {

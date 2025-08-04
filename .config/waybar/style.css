@@ -3,7 +3,7 @@
 @keyframes blink-critical {
 	to {
 		/*color: @white;*/
-		background-color: @critical;
+		color: @critical;
 	}
 }
 
@@ -48,17 +48,18 @@
 
 /* module */
 #clock,
-#cpu,
-#memory,
 #network,
+#memory,
+#cpu,
 #pulseaudio,
 #workspaces {
 	padding-left: 8pt;
 	padding-right: 8pt;
 }
 
-#tray {
-	padding-right: 8pt;
+#tray,
+#custom-updates {
+	padding-left: 8pt;
 }
 
 /* critical module */
@@ -72,6 +73,7 @@
 }
 
 /* warning module */
+#custom-updates.warning,
 #network.disconnected,
 #memory.warning,
 #cpu.warning {
@@ -120,19 +122,15 @@
 	color: @f3;
 }
 
+#custom-updates,
 #network,
 #tray {
 	background: @b2;
 	color: @f2;
 }
 
-#clock.date {
+#clock {
 	background: @b1;
-	color: @f1;
-}
-
-#clock.time {
-	background: #999ebc;
 	color: @f1;
 }
 
