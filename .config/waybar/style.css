@@ -11,16 +11,11 @@
 
 @define-color warning 	#fabd2f;
 @define-color critical	#cc241d;
-@define-color b1	#a3aed2;
-@define-color f1	#090c0c;
-@define-color b2	#769ff0;
-@define-color f2	#e3e5e5;
-@define-color b3	#394260;
-@define-color f3	#769ff0;
-@define-color b4	#212736;
-@define-color f4	#769ff0;
-@define-color b5	#1d2230;
-@define-color f5	#a0a9cb;
+@define-color purple0	#9575E2;
+@define-color purple1	#3F3E69;
+@define-color purple2	#62567E;
+@define-color purple3 	#e1d8ef;
+@define-color orange	#f29a30;
 
 * {
 	border: none;
@@ -33,33 +28,18 @@
 }
 
 #waybar {
-	background: rgba(40, 40, 40, 0.7); /* #282828e0 */
+	background: transparent;
 	color: white;
 	font-family: "JetBrainsMono Nerd Font";
-	font-size: 10pt;
+	font-size: 12px;
 }
 
 #custom-icon {
-	background: @b2;
-	color: @f2;
-	padding-left: 10pt;
-	padding-right: 8pt;
-}
-
-/* module */
-#clock,
-#network,
-#memory,
-#cpu,
-#pulseaudio,
-#workspaces {
-	padding-left: 8pt;
-	padding-right: 8pt;
-}
-
-#tray,
-#custom-updates {
-	padding-left: 8pt;
+	background: rgba(0,0,0,0.7);
+	border-right: 1px solid @purple0;
+	font-size: 14px;
+	padding-left: 8px;
+	padding-right: 13px; /* add 5px for fix icon */
 }
 
 /* critical module */
@@ -82,91 +62,46 @@
 
 /* workspaces */
 #workspaces {
-	background: @b3;
+	background: rgba(0,0,0,0.7);
+	color: #fff;
+	padding: 0 4px;
 }
 
 #workspaces button {
-	color: @f3;
-	padding-left: 2pt;
-	padding-right: 2pt;
+	color: #fff;
 }
 
 #workspaces button:hover {
 	background: transparent;
-	color: @f2;
 }
 
 /* workspaces active  */
 #workspaces button.visible {
-	color: white;
+	color: @orange;
 	font-weight: 900;
 }
 
-#window {
-	margin-right: 35pt;
-	margin-left: 35pt;
-}
-
-#pulseaudio {
-	background: @b5;
-	color: @f5;
-}
-
-#cpu {
-	background: @b4;
-	color: @f4;
-}
-
-#memory {
-	background: @b3;
-	color: @f3;
+#custom-updates,
+#clock,
+#pulseaudio,
+#cpu,
+#memory,
+#disk,
+#tray {
+	background: rgba(0,0,0,0.7);
+	color: @purple3;
+	padding: 6px 8px;
 }
 
 #custom-updates,
-#network,
+#pulseaudio,
+#cpu,
 #tray {
-	background: @b2;
-	color: @f2;
+	margin-left: 8px;
 }
 
-#clock {
-	background: @b1;
-	color: @f1;
-}
-
-#custom-arrow1,
-#custom-arrow4 {
-	font-size: 11pt;
-	color: @b2;
-	background: @b3;
-}
-
-#custom-arrow2 {
-	font-size: 11pt;
-	color: @b3;
-	background: transparent;
-}
-
-#custom-arrow3 {
-	font-size: 11pt;
-	color: @b1;
-	background: @b2;
-}
-
-#custom-arrow5 {
-	font-size: 11pt;
-	color: @b3;
-	background: @b4;
-}
-
-#custom-arrow6 {
-	font-size: 11pt;
-	color: @b4;
-	background: @b5;
-}
-
-#custom-arrow7 {
-	font-size: 11pt;
-	color: @b5;
-	background: transparent;
+#network {
+	background: rgba(0,0,0,0.7);
+	color: @purple3;
+	padding-right: 12px; /* add 4px for fix icon */
 }

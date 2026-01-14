@@ -1,29 +1,28 @@
 {
 	"layer": "top",
 	"position": "top",
+	"margin-top": 10,
+	"margin-left": 10,
+	"margin-right": 10,
 
 	"modules-left": [
 		"custom/icon",
-		"custom/arrow1",
-		"hyprland/workspaces",
-		"custom/arrow2",
-		"hyprland/window"
+		"hyprland/workspaces"
+	],
+
+	"modules-center": [
+		"clock#date",
+		"clock#time"
 	],
 
 	"modules-right": [
-		"custom/arrow7",
-		"pulseaudio",
-		"custom/arrow6",
-		"cpu",
-		"custom/arrow5",
-		"memory",
-		"custom/arrow4",
 		"custom/updates",
+		"pulseaudio",
+		"cpu",
+		"memory",
+		"disk",
 		"tray",
-		"network",
-		"custom/arrow3",
-		"clock#date",
-		"clock#time"
+		"network"
 	],
 
 	"hyprland/window": {
@@ -47,7 +46,7 @@
     },
 
 	"pulseaudio": {
-		"format": "{icon} {volume}%",
+		"format": "<span font='15px' rise='-800'>{icon}</span> {volume}%",
 		"format-icons": {
 			"default": ["", "", ""]
 		},
@@ -58,8 +57,8 @@
 	},
 
 	"cpu": {
-		"format": " {usage}%",
-		"format-alt": " {load}",
+		"format": "<span font='15px' rise='-800'></span> {usage}%",
+		"format-alt": "<span font='15px' rise='-800'></span> {load}",
 		"interval": 5,
 		"states": {
 			"warning": 70,
@@ -69,19 +68,31 @@
 	},
 
 	"memory": {
-		"format": " {used}G",
-		"format-alt": " {percentage}%",
+		"format": "<span font='15px' rise='-800'></span>  {used}G",
+		"format-alt": "<span font='15px' rise='-800'></span>  {percentage}%",
 		"interval": 5,
 		"states": {
 			"warning": 70,
 			"critical": 90
 		},
 		"tooltip": true,
-		"tooltip-format": "Usage {percentage}%\n  {used}GB/{total}GB"
+		"tooltip-format": "Usage {percentage}%\n{used}GB/{total}GB"
+	},
+
+	"disk": {
+		"format":"<span font='15px' rise='-800'>󰋊</span> {percentage_used}%",
+		"format-alt":"<span font='15px' rise='-800'>󰋊</span> {specific_used:0.2f}GB",
+		"interval": 30,
+		"states": {
+			"warning": 70,
+			"critical": 90
+		},
+		"tooltip-format": "Usage	{specific_used:0.2f}GB\nFree	{specific_free:0.2f}GB\n\nTotal	{specific_total:0.2f}GB",
+		"unit": "GB"
 	},
 
 	"custom/updates": {
-		"escape": true,
+		"escape": false,
 		"exec": "~/.config/waybar/scripts/check-updates.sh",
 		"format": "{}",
 		"interval": 1800,
@@ -135,41 +146,6 @@
 
 	"custom/icon": {
 		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow1": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow2": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow3": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow4": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow5": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow6": {
-		"format": "",
-		"tooltip": false
-	},
-
-	"custom/arrow7": {
-		"format": "",
 		"tooltip": false
 	}
 }
