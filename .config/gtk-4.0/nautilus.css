@@ -1,0 +1,107 @@
+.nautilus-window {
+	background-color: #000;
+	color: #ccc;
+	opacity: 0.95;
+}
+
+.nautilus-window floating-sheet sheet {
+	border-radius: 0px;
+}
+
+floating-sheet .undershoot-top {
+	background-color: #000;
+	border: 1px solid #62567E;
+}
+
+button, splitbutton, tooltip  {
+	border-radius: 0px;
+}
+
+button:hover {
+	background-color: #131119;
+}
+
+
+button.close image {
+	background-color: transparent;
+	border-radius: 0px;
+	padding: 0px;
+}
+
+.top-bar {
+	color: #ccc;
+	border-bottom: 1px solid #62567E;
+}
+
+#NautilusPathBar {
+	background-color: #131119;
+	border-radius: 0px;
+
+}
+
+#NautilusPathButton {
+	color: #ccc;
+}
+
+.sidebar-pane {
+	background-color: #000;
+}
+
+.navigation-sidebar {
+	border-right: 1px solid #62567E;
+}
+
+.navigation-sidebar separator {
+	background-color: #62567E;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.sidebar-row {
+	border-radius: 0px;
+	margin: 0px;
+}
+
+.sidebar-row:hover {
+	background-color: #131119;
+}
+
+.sidebar-row:selected {
+	background-color: #131119;
+}
+
+.nautilus-grid-view .view {
+	padding: 6px;
+}
+
+.nautilus-grid-view child {
+	border-radius: 0px;
+
+}
+
+.nautilus-grid-view child:hover {
+	background-color: #131119;
+}
+
+.nautilus-grid-view child:selected {
+	background-color: #62567E;
+}
+
+.boxed-list {
+	border-radius: 0px;
+}
+
+.boxed-list .entry {
+	background-color: #131119;
+	border-radius: 0px;
+	border-color: #9575E2;
+	outline-offset: -1px;
+}
+
+.boxed-list .entry {
+	outline-color: #9575E2;
+}
+
+.nautilus-window .text-button {
+    background-color: #9575E2;
+}

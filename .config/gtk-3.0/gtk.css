@@ -1,0 +1,151 @@
+@import url('seahorse.css');
+
+window,
+dialog,
+messagedialog, {
+	box-shadow: none;
+	color: #ccc;
+	opacity: 0.95;
+}
+
+.background:not(#window) {
+	background: #000;
+}
+
+.titlebar {
+	background-color: #000;
+	box-shadow: none;
+	color: #ccc;
+}
+
+entry {
+	background: #000;
+	border-color: #62567E;
+	border-radius: 0;
+	color: #ccc;
+	transition: none;
+}
+
+entry:focus {
+	box-shadow: 0 0 0 1px #9575E2;
+}
+
+
+button {
+	-gtk-icon-shadow: none;
+	background: #131119;
+	border: none;
+	border-radius: 0px;
+	box-shadow: none;
+	color: white;
+	text-shadow: none;
+	transition: none;
+}
+
+button:hover {
+	background: #62567E;
+}
+
+button.suggested-action {
+	background-color: #9575E2;
+}
+
+button.suggested-action:hover {
+	background-color: #7c61bd;
+}
+
+modelbutton.flat:hover {
+	background-color: #131119;
+	border-radius: 0;
+}
+
+messagedialog .text-button {
+	background-color: #000;
+	color: #ccc;
+}
+
+messagedialog .text-button {
+	background: #000;
+	border-color: #62567E;
+	box-shadow: none;
+	text-shadow: none;
+	transition: none;
+}
+
+messagedialog .text-button:hover {
+	background: #131119;
+}
+
+headerbar.titlebar {
+	background: #000;
+	border-bottom: 1px;
+	border-color: #62567E;
+}
+
+.sidebar {
+	background-color: #000;
+}
+
+.sidebar-row.activatable:selected {
+	background-color: #131119;
+}
+
+separator {
+	background: #62567E;
+}
+
+popover {
+	border: 1px solid #62567E;
+	border-radius: 0;
+}
+
+headerbar.titlebar {
+	background: #000;
+	border-bottom: 1px solid #62567E;
+}
+
+#pathbarbox {
+	background-color: #000;
+	border-color: #62567E;
+}
+
+#pathbarbox>stack {
+	margin: -6px;
+}
+
+#pathbarbox button {
+	background-color: #000;
+	padding: 6px;
+}
+
+#pathbarbox button.popup {
+	min-width: 24px;
+}
+
+#pathbarbox button.toggle:checked {
+	background-color: #131119;
+}
+
+list {
+	background-color: #000;
+	color: #ccc;
+}
+
+.view {
+	background-color: #000;
+	color: #ccc;
+}
+
+treeview header button {
+	background-color: #000;
+	border-bottom: 1px solid #62567E;
+	
+}
+
+treeview:selected {
+	background-color: #131119;
+}
+
+filechooser actionbar>revealer>box {
+	border-top: 1px solid #62567E;
+}

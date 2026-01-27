@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="smb://192.168.1.2/home/" added="2025-06-06T02:11:38.781228Z" modified="2025-06-06T02:11:38.781235Z" visited="2025-06-06T02:11:38.781229Z">
+    <title>home on 192.168.1.2</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2025-06-06T02:11:38.781231Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.1.2/anime/" added="2025-07-06T08:37:04.028447Z" modified="2025-07-06T08:37:04.028457Z" visited="2025-07-06T08:37:04.028449Z">
+    <title>anime on 192.168.1.2</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2025-07-06T08:37:04.028452Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.1.2/nearven/" added="2025-07-19T06:34:49.526919Z" modified="2025-07-19T06:34:49.526924Z" visited="2025-07-19T06:34:49.526920Z">
+    <title>nearven on 192.168.1.2</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2025-07-19T06:34:49.526922Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.1.2/webhost/" added="2025-08-13T12:39:40.731588Z" modified="2025-08-13T12:39:40.731592Z" visited="2025-08-13T12:39:40.731589Z">
+    <title>webhost on 192.168.1.2</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2025-08-13T12:39:40.731591Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="smb://192.168.1.2/publishlabs/" added="2025-09-15T15:31:43.630559Z" modified="2025-09-15T15:31:43.630563Z" visited="2025-09-15T15:31:43.630560Z">
+    <title>publishlabs on 192.168.1.2</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2025-09-15T15:31:43.630561Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

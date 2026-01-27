@@ -1,5 +1,5 @@
 #window {
-	background-color: rgba(40, 40, 40, 0.7);
+	background: rgba(0,0,0,0.5);
 	font-size: 14px;
 	font-family: 'JetBrainsMono Nerd Font', monospace;
 }
@@ -9,11 +9,11 @@
 }
 
 #input {
-	border: 1px solid #769ff0;
+	border: 1px solid #62567E;
 	border-radius: 0;
 	background-color: transparent;
 	color: white;
-	margin: 3px;
+	margin-bottom: 3px;
 }
 
 #input image:first-child {
@@ -25,7 +25,9 @@
 }
 
 #input:focus {
+	border: 1px solid #9575E2;
 	border-radius: 0;
+	box-shadow: none;
 }
 
 #entry {
@@ -33,11 +35,11 @@
 }
 
 #entry:selected {
-	background-color: #394260;
+	background-color: #62567E;
 }
 
 #text:selected {
-	color: #769ff0;
+	color: #f29a30;
 }
 
 #img {
